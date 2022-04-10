@@ -1,6 +1,8 @@
-# Django Reactivated Test Project 01
+# Django Reactivated Test Project 02
 
 ## Install Workflow
+
+Only difference between testproject01 and testproject02 is the method of how the node package of reactivated is installed.
 
 
 ##### 1. Create new environment
@@ -40,9 +42,9 @@ root/
 
 
 ##### 5. Installing Node Package Reactivated
-While in the projects root, install the node package reactivated using yarn. These packages will install the packages into `node_modules/`
+While in the projects root, install the node package reactivated following the documentations method. These packages will install the packages into `node_modules/`
 ```
-yarn add reactivated
+npm install reactivated
 ```
 
 References:
@@ -162,13 +164,13 @@ python manage.py runserver
 
 ### Bug Message:
 ```
-(djangotest) PS D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject01> python manage.py runserver
-[09/Apr/2022 22:43:01,296] Generating interfaces and client side code
-[09/Apr/2022 22:43:01,296] Skipping generation as nothing has changed
+(djangotest) PS D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject02> python .\manage.py runserver
+[09/Apr/2022 22:54:12,382] Generating interfaces and client side code
+[09/Apr/2022 22:54:14,232] Finished generating.
 Traceback (most recent call last):
-  File "D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject01\manage.py", line 22, in <module>
+  File "D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject02\manage.py", line 22, in <module>
     main()
-  File "D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject01\manage.py", line 18, in main
+  File "D:\Documents\GitHub\DjangoReactivated\DjangoReactivated\testproject02\manage.py", line 18, in main
     execute_from_command_line(sys.argv)
   File "C:\Users\Robby\.conda\envs\djangotest\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
     utility.execute()
@@ -196,4 +198,3 @@ Traceback (most recent call last):
     hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
 FileNotFoundError: [WinError 2] The system cannot find the file specified
 ```
-
