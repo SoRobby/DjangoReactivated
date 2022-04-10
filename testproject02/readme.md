@@ -1,6 +1,8 @@
-# Django Reactivated Test Project 01
+# Django Reactivated Test Project 02
 
 ## Install Workflow
+
+Only difference between testproject01 and testproject02 is the method of how the node package of reactivated is installed.
 
 
 ##### 1. Create new environment
@@ -40,9 +42,9 @@ root/
 
 
 ##### 5. Installing Node Package Reactivated
-While in the projects root, install the node package reactivated using yarn. These packages will install the packages into `node_modules/`
+While in the projects root, install the node package reactivated following the documentations method. These packages will install the packages into `node_modules/`
 ```
-yarn add reactivated
+npm install reactivated
 ```
 
 References:
